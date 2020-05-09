@@ -3,6 +3,9 @@
 # ----------------------------------------------------------------------
 menu:
   Project: /projects/ || fa fa-bars
+  New: /news/ || fa fa-th
+  About: /about/ || fa fa-address-book-o
+  Contact: /contact/ || fa fa-envelope-o
   Home: / || fa fa-close
 
 
@@ -16,24 +19,32 @@ menu:
 # ----------------------------------------------------------------------
 # Footer Setting
 # ----------------------------------------------------------------------
-footer_custom_text: If you would like to contact us, please send an e-mail to one of the following addresses
+since: 2020
 
-footer_contact:
+author: Primitive Architecture
+
+footer_copyright:
   enable: true
-  info_1:
-    text: General
-    mail: office(at)primitive-architecture.com
-    url: mailto:office@primitive-architecture.com
-  info_2:
-    text: Publication or Exhibition
-    mail: media(at)primitive-architecture.com
-    url: mailto:media@primitive-architecture.com
-  info_3:
-    text: Internship & Employment
-    mail: work(at)primitive-architecture.com
-    url: work@primitive-architecture.com
+  text: All rights reserved
 
-  
+footer_custom_text:
+
+# footer_contact:
+#   enable: true
+#   info_1:
+#     text: General
+#     mail: office(at)primitive-architecture.com
+#     url: mailto:office@primitive-architecture.com
+#   info_2:
+#     text: Publication or Exhibition
+#     mail: media(at)primitive-architecture.com
+#     url: mailto:media@primitive-architecture.com
+#   info_3:
+#     text: Internship & Employment
+#     mail: work(at)primitive-architecture.com
+#     url: work@primitive-architecture.com
+
+
 
 
 
@@ -98,7 +109,7 @@ algolia_search:
 # Please see doc for more details: https://docs.jerryc.me/config.html#本地搜索
 # ---------------
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
@@ -327,16 +338,8 @@ facebook_comments:
 
 #####     Footer Settings    ####
 # ------------------------------------
-since: 2020
 
-footer_copyright:
-  enable: true
 
-ICP:
-  enable: false
-  url:
-  text:
-  icon: /img/icp.png
 
 ####   Analysis    ####
 # ---------------

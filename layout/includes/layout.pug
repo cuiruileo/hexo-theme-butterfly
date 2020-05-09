@@ -1,5 +1,3 @@
-- var hideAside = !theme.aside.enable || page.aside === false ? 'hide-aside' : ''
-
 doctype html
 html(lang=config.language data-theme=theme.display_mode)
   head
@@ -7,6 +5,8 @@ html(lang=config.language data-theme=theme.display_mode)
   body
     if theme.preloader
       !=partial('includes/loading/loading', {}, {cache:theme.fragment_cache})
+
+    !=partial('includes/mobile-sidebar/index', {}, {cache:theme.fragment_cache})
 
     #body-wrap
       if theme.background
